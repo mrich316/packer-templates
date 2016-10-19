@@ -5,6 +5,8 @@ Param(
   [string]$out
 )
 
+$ErrorActionPreference = "Stop"
+
 $xml = [xml](Get-Content $unattend)
 
 $proxyNode = $xml.unattend.settings.component | where {$_.Name -eq 'Microsoft-Windows-IE-ClientNetworkProtocolImplementation'}
