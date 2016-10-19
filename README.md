@@ -28,3 +28,8 @@ Our build script looks like:
 
 When calling **set_unattend_proxy.ps1**, omitting **-proxyServer**
 and **-proxyOverride** will remove the proxy configuration.
+
+## Licenses
+
+Some windows scripts and tools where copied from [joefitzgerald/packer-windows](https://github.com/joefitzgerald/packer-windows)
+and are provided by [The MIT License](https://raw.githubusercontent.com/joefitzgerald/packer-windows/master/LICENSE).
