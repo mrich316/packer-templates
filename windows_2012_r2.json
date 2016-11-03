@@ -62,6 +62,11 @@
       "keep_input_artifact": false,
       "output": "windows_2012_r2_{{.Provider}}.box",
       "vagrantfile_template": "./vagrant/windows_2012_r2.template"
+    },
+    {
+      "type": "checksum",
+      "checksum_types": ["sha256"],
+      "output": "windows_2012_r2_{{.Provider}}.sha256"
     }
   ],
   "variables": {
