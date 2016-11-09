@@ -5,6 +5,12 @@ Param(
   [string]$out
 )
 
+# Setup error handling.
+Trap
+{
+    $_
+    Exit 1
+}
 $ErrorActionPreference = "Stop"
 
 $xml = [xml](Get-Content $unattend)
