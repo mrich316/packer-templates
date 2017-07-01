@@ -5,6 +5,12 @@
 cmd /c certutil -addstore -f "TrustedPublisher" A:\oracle-cert.cer
 
 :: Install cert from iso if found.
+if exist E:\cert\vbox-sha1.cer (
+    cmd /c certutil -addstore -f "TrustedPublisher" E:\cert\vbox-sha1.cer
+)
+if exist E:\cert\vbox-sha256.cer (
+    cmd /c certutil -addstore -f "TrustedPublisher" E:\cert\vbox-sha256.cer
+)
 if exist E:\cert\vbox-sha256-r3.cer (
     cmd /c certutil -addstore -f "TrustedPublisher" E:\cert\vbox-sha256-r3.cer
 )
