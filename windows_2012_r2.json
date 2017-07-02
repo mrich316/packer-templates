@@ -24,8 +24,7 @@
         "./windows/scripts/compact.bat",
         "./windows/scripts/microsoft-updates.bat",
         "./windows/scripts/win-updates.ps1",
-        "./windows/scripts/ansible-winrm.ps1",
-        "./windows/scripts/oracle-cert.cer"
+        "./windows/scripts/ansible-winrm.ps1"
       ],
       "vboxmanage": [
         [
